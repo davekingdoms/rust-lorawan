@@ -68,16 +68,16 @@ where
         match self.lora.get_board_type() {
             BoardType::Rak4631Sx1262 => -15,
             BoardType::Stm32l0Sx1276 => -15,
-            BoardType::Stm32wlSx1262 => -50,
-            _ => -50,
+            BoardType::Stm32wlSx1262 => -500,
+            _ => -500,
         }
     }
     fn get_rx_window_duration_ms(&self) -> u32 {
         match self.lora.get_board_type() {
             BoardType::Rak4631Sx1262 => 1050,
             BoardType::Stm32l0Sx1276 => 1003,
-            BoardType::Stm32wlSx1262 => 1050,
-            _ => 1050,
+            BoardType::Stm32wlSx1262 => 3050,
+            _ => 3050,
         }
     }
 }
