@@ -76,8 +76,8 @@ where
         match self.lora.get_board_type() {
             BoardType::Rak4631Sx1262 => 1050,
             BoardType::Stm32l0Sx1276 => 1003,
-            BoardType::Stm32wlSx1262 => 5000,
-            _ => 5000,
+            BoardType::Stm32wlSx1262 => 3000,
+            _ => 3000,
         }
     }
 }
